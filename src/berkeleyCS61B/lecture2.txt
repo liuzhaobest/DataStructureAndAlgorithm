@@ -1,0 +1,32 @@
+Compilation
+
+The standard tools for executing Java programs use a two step process
+Hello.java -> javac (compiler) -> Hello.class -> java (Interpreter) -> Stuff
+
+why make  a class file at all?
+* .class file has been type checked
+* .class file are 'simpler' for machine to execute
+
+
+Object Instantiation
+
+
+
+Instance variable
+
+non-static method. If the method is going to be invoked by an instance of the class,
+then it should be non-static.
+Therefore, it means a static method should only be used when there
+is no instance needed.
+
+For example:
+Dog.maxDog(maya,yapster).makeNoise(); // it is Dog invoking this method.
+
+Dog[] dogs = new Dog[2];
+dogs[0] = new Dog(8);
+
+String[] args
+this is an string array you provide when run the class using java
+
+stdlib princeton
+https://introcs.cs.princeton.edu/java/stdlib/
