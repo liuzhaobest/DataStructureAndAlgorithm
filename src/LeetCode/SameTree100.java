@@ -7,6 +7,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+/*
 class Solution {
     public boolean isSameTreeRecussion(TreeNode p, TreeNode q) {
         // base case
@@ -53,5 +55,4 @@ class Solution {
     }
 }
 
-
-
+*/

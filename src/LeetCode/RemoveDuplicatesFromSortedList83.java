@@ -11,6 +11,7 @@
  use two pointers to find the next different one.
  The solution idea is to compare each two and skip if vals are same
  */
+ /*
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         if(head == null || head.next == null) return head;
@@ -30,3 +31,4 @@ class Solution {
         return head;
     }
 }
+*/

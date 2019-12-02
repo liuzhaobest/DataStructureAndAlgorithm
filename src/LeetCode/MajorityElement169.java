@@ -9,6 +9,7 @@ https://leetcode.com/problems/majority-element/solution/
 */
 
 // TODO
+/*
 class Solution {
     public int majorityElement(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -22,4 +23,4 @@ class Solution {
             // find the key with the largest value.
         }
     }
-}
+}*/
