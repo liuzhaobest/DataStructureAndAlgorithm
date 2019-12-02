@@ -11,7 +11,7 @@ return 2
 */
 
 
-public class jumpingGame235 {
+public class JumpingGame235 {
     public static void main(String[] args) {
         int[] arr = {3,2,3,1,1,4};
         System.out.println(numJump(arr));
