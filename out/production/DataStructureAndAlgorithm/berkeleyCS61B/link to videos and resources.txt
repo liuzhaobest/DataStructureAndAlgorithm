@@ -1,0 +1,5 @@
+Videos
+http://www.infocobuild.com/education/audio-video-courses/computer-science/CS61B-Spring2015-Berkeley/lecture-01.html
+
+Some other resources:
+http://datastructur.es/sp15/index.html

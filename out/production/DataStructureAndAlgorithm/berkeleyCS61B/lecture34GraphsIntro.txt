@@ -1,0 +1,61 @@
+http://www.infocobuild.com/education/audio-video-courses/computer-science/CS61B-Spring2015-Berkeley/lecture-34.html
+
+Graphs
+A set of nodes connected pairwise by edges
+
+directed graphs
+undirected graphs
+
+cyclic graph
+
+with edge labels
+
+graph
+
+set of vertices
+set of edges
+vertices with an edge between are adjacent
+vertices or edges may have labels
+
+a path is a sequence of vertices connected by edges
+a cycle us a path whose first and las vertices are the same
+a graph with a cycle is 'cyclic'
+
+two vertices are connected if there is a path between them
+
+if all vertices are connected, we say graph is connected
+
+(how about directed graph? may seem connected by not?)
+
+some graph processing problems
+s-t path
+shortest s-t path
+cycle
+euler tour
+hamilton tour
+connectivity
+biconnectivity
+planarity
+isomorphism
+
+
+graph representations
+
+common simplification: integer vertices
+Common convention: Number nodes irrespective of label, and use number throughout the graph
+implementation.
+
+
+Representations 1
+adjacency matrix
+
+Representations 2
+Edge sets: Collection of all edges
+
+representation 3(most popular)
+adjacency lists
+maintain array of kists indexed by vertex number
+
+
+
+
