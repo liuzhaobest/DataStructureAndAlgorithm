@@ -5,13 +5,49 @@ import java.util.Collections;
 
 public class KnapSack {
     public static void main(String[] args) {
-        int weightLimit = 7;
-        int[] weightArr = {2,3};
-        int[] valueArr = {3,7};
-        System.out.println(solutionUnbounded(weightArr,valueArr,weightLimit));
+        int weightLimit = 8;
+        int[] weightArr = {1,3,4,5};
+        int[] valueArr = {10,40,50,70};
+        System.out.println(unbounded(weightArr,valueArr,weightLimit));
     }
 
-    public static int solutionUnbounded(int[] weightArr, int[] valueArr, int weightLimit){
+    public static int unbounded(int[] weightArr, int[] valueArr, int weightLimit){
+        if(weightArr == null || valueArr == null || valueArr.length == 0 || weightArr.length == 0 || weightLimit == 0){
+            return 0;
+        }
+        int numberOfItem = weightArr.length;
+        int[] dp = new int[weightLimit+1];
+        dp[0] = 0;
+        for (int i = 0; i <= weightLimit; i++) {
+            for (int j = 0; j < numberOfItem; j++) {
+                if(weightArr[j] <= i){
+                    dp[i] = Math.max(dp[i],dp[i - weightArr[j]] + valueArr[j]);
+                }
+            }
+        }
+        return dp[weightLimit];
+    }
+
+    private static int unboundedKnapsack(int[] wt,int[] val, int W){
+
+        // dp[i] is going to store maximum value
+        // with knapsack capacity i.
+        int n = val.length;
+        int dp[] = new int[W + 1];
+
+        // Fill dp[] using above recursive formula
+        for (int i = 0; i <= W; i++) {
+            for (int j = 0; j < n; j++) {
+                if (wt[j] <= i) {
+                    dp[i] = Math.max(dp[i], dp[i - wt[j]] + val[j]);
+                }
+            }
+        }
+        return dp[W];
+    }
+
+
+        public static int solutionUnbounded(int[] weightArr, int[] valueArr, int weightLimit){
         if(weightArr == null || valueArr == null || valueArr.length == 0 || weightArr.length == 0 || weightLimit == 0){
             return 0;
         }
